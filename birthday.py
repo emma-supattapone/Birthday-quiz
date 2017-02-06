@@ -1,6 +1,6 @@
 """
 birthday.py
-Author: <your name here>
+Author: Emma Supattapone
 Credit: <list sources used, if any>
 Assignment:
 
@@ -31,3 +31,9 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+
+temperature = float(input("What is the temperature outside? "))
+if temperature < 55:
+    print("You should bring a fleece.")
+else:
+    print("You don't need to bring a fleece.")
