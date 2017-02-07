@@ -69,6 +69,3 @@ if year < 1980:
     tmp = "Stone Age"
     
 print(name + ", you are a " + season + " baby of the " + tmp + ".")
-
-
-    
