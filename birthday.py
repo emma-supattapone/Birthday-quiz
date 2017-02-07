@@ -31,9 +31,44 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+from datetime import datetime
+from calendar import month_name
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
+monthrn = month_name[todaymonth]
 
-temperature = float(input("What is the temperature outside? "))
-if temperature < 55:
-    print("You should bring a fleece.")
-else:
-    print("You don't need to bring a fleece.")
+    
+name = input("Hello, what is your name? ")
+month = input("Hi " + name + ", what was the name of the month you were born in? ")
+year = int(input("And what year were you born in, " + name + "?"))
+day = int(input("And the day? "))
+
+
+
+if month == "october" and day == 31:
+    print("You were born on Halloween!")
+elif month == monthrn and day == todaydate:
+    print("Happy Birthday!")
+    
+if month == "december" or month == "january" or month == "february":
+    season = "winter"
+if month == "march" or month == "april" or month == "may":
+    season = "spring"
+if month == "june" or month == "july" or month == "august":
+    season = "summer"
+if month == "september" or month == "october" or month == "november":
+    season = "fall"
+
+if year >= 2000:
+    tmp = "two thousands"
+if year >= 1990 and year < 1999:
+    tmp = "nineties"
+if year >= 1980 and year <1989:
+    tmp = "eighties"
+if year < 1980:
+    tmp = "Stone Age"
+    
+print(name + ", you are a " + season + " baby of the " + tmp + ".")
+
+
+    
