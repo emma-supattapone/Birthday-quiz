@@ -61,7 +61,7 @@ if year >= 2000:
     tmp = "two thousands"
 if year >= 1990 and year < 2000:
     tmp = "nineties"
-if year >= 1980 and year <1990:
+if year >= 1980 and year < 1990:
     tmp = "eighties"
 if year < 1980:
     tmp = "Stone Age"
