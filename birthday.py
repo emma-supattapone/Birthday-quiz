@@ -59,9 +59,9 @@ if month == "september" or month == "october" or month == "november":
 
 if year >= 2000:
     tmp = "two thousands"
-if year >= 1990 and year < 1999:
+if year >= 1990 and year < 2000:
     tmp = "nineties"
-if year >= 1980 and year <1989:
+if year >= 1980 and year <1990:
     tmp = "eighties"
 if year < 1980:
     tmp = "Stone Age"
