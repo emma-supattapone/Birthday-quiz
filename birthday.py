@@ -43,11 +43,9 @@ month = input("Hi " + name + ", what was the name of the month you were born in?
 year = int(input("And what year were you born in, " + name + "? "))
 day = int(input("And the day? "))
 
-if month == "October" and day == 31:
-    print("You were born on Halloween!")
-elif month == monthrn and day == todaydate:
-    print("Happy Birthday!")
-    
+ 
+
+
 if month == "December" or month == "January" or month == "February":
     season = "winter"
 if month == "March" or month == "April" or month == "May":
@@ -56,7 +54,6 @@ if month == "June" or month == "July" or month == "August":
     season = "summer"
 if month == "September" or month == "October" or month == "November":
     season = "fall"
-
 if year >= 2000:
     tmp = "two thousands"
 if year >= 1990 and year < 2000:
@@ -66,4 +63,9 @@ if year >= 1980 and year < 1990:
 if year < 1980:
     tmp = "Stone Age"
     
-print(name + ", you are a " + season + " baby of the " + tmp + ".")
+if month == "October" and day == 31:
+    print("You were born on Halloween!")
+elif month == monthrn and day == todaydate:
+    print("Happy Birthday!")   
+else:
+    print(name + ", you are a " + season + " baby of the " + tmp + ".")
