@@ -43,8 +43,6 @@ month = input("Hi " + name + ", what was the name of the month you were born in?
 year = int(input("And what year were you born in, " + name + "? "))
 day = int(input("And the day? "))
 
- 
-
 
 if month == "december" or month == "january" or month == "february":
     season = "winter"
@@ -54,6 +52,7 @@ if month == "june" or month == "july" or month == "august":
     season = "summer"
 if month == "september" or month == "october" or month == "november":
     season = "fall"
+    
 if year >= 2000:
     tmp = "two thousands"
 if year >= 1990 and year < 2000:
