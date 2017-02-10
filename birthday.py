@@ -62,7 +62,7 @@ if year >= 1980 and year < 1990:
 if year < 1980:
     tmp = "Stone Age"
     
-if month == "October" and day == 31:
+if month == "october" and day == 31:
     print("You were born on Halloween!")
 elif month == monthrn and day == todaydate:
     print("Happy Birthday!")   
