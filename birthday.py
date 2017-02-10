@@ -65,6 +65,6 @@ if year < 1980:
 if month == "october" and day == 31:
     print("You were born on Halloween!")
 elif month == monthrn and day == todaydate:
-    print("Happy Birthday!")   
+    print("Happy birthday!")   
 else:
     print(name + ", you are a " + season + " baby of the " + tmp + ".")
